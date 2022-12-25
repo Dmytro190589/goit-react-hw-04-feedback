@@ -1,0 +1,15 @@
+.button {
+  width: 60px;
+  padding: 5px;
+  background-color: #7ba374;
+  font-family:sans-serif;
+  border-radius: 5px;
+  border: none;
+  color: #e4dcf1;
+ 
+}
+ 
+  
+.button:hover {
+    background-color: #1e516d;
+  }
