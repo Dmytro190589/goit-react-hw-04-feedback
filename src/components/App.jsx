@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
+import css from './App.module.css'
 
 import Statistics from '../components/Statistics/Statistics';
 import Section from './Section/Section';
@@ -34,7 +35,7 @@ const totalNum = countTotalFeedback();
     return Math.round((good / totalNum) * 100);
   };
   return (
-    <div>
+    <div className={css.container}>
       <Section title="Please, leave feedback">
         <FeedbackOptions
           options={['good', 'neutral', 'bad']}
