@@ -2,7 +2,7 @@ import { useState } from 'react';
 import React from 'react';
 import css from './App.module.css'
 
-import Statistics from '../components/Statistics/Statistics';
+import Statistics from './Statistics/Statistics';
 import Section from './Section/Section';
 import Notification from './Notification/Notification';
 import FeedbackOptions from './FeadbackOptions/FeedbackOptions';
@@ -51,8 +51,8 @@ const totalNum = countTotalFeedback();
             good={good}
             neutral={neutral}
             bad={bad}
-            total={countTotalFeedback()}
-            positivePercentage={countPositiveFeedbackPercentage}
+            total={totalNum}
+            positivePercentage={countPositiveFeedbackPercentage()}
           />
         )}
       </Section>
